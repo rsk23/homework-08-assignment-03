@@ -4,6 +4,7 @@
 
 header{
   background-color: rgb(3, 163, 223);
+  color: white;
   /*color: 03a3df;*/
 }
 footer{
@@ -13,4 +14,23 @@ footer{
   height: 500px;
   width: 1628px;
   color: white;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(4, auto);
+  /*grid-template-rows: 114px 1fr;*/
+}
+.flexbox-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-item-1{
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+.gird-item-2{
+  grid-column: 10 / span 1;
+  grid-row: 2 / span 1;
 }
